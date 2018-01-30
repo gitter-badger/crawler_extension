@@ -1,0 +1,46 @@
+
+html{
+    margin: 10px;
+}
+
+body{
+    width: 700px;
+    margin: 20px;
+}
+.title{
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+}
+li {
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+div {
+    padding-right: 8px;
+}
+
+.list .radio-option {
+    float: left;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    background: url(http://toddlerwilliams.com/apps/Angular-SimplySocial/app/images/checkbox2.png) no-repeat 0px 0px;
+}
+.list .radio-option.click {
+    background: url(http://toddlerwilliams.com/apps/Angular-SimplySocial/app/images/checkbox1.png) no-repeat 0px 0px;
+}
+
+.start{
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.start:hover {
+    background-color: #3e8e41;
+}
