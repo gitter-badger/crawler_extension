@@ -3,27 +3,15 @@ $(document).ready(function () {
         $(this).not(this).removeClass('click');
         $(this).toggleClass("click");
     });
+
+
+    var url = 'https://www.kham.com.tw/application/UTK01/UTK0101_06.aspx?TYPE=1&CATEGORY=80';
+    $('.start').click(
+      ()=> {getHTML(url).then(
+        (s) => {
+          console.log($(s).find('title').text())
+        },        
+        (e) => console.error(e)
+      )}
+    )
 });
-
-
-var cors = "https://cors-anywhere.herokuapp.com/";
-var getUrl = url => cors + url;
-var url = 'https://www.kham.com.tw/application/UTK01/UTK0101_06.aspx?TYPE=1&CATEGORY=80';
-$.get(getUrl(url)).done(
-  (s) => {
-
-      var el = document.createElement( 'div' );
-      el.innerHTML = s;
-      console.log($(el).find('div.d_frame').click());
-      // console.log($(el));
-
-
-
-
-  }
-).fail(
-  (e) => {
-    console.log('e: ', e);
-  }
-);
-
