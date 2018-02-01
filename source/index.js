@@ -6,17 +6,24 @@ $(document).ready(function () {
 });
 
 
-var cors = "https://cors-anywhere.herokuapp.com/"
-var getUrl = url => cors + url
-var url = 'https://www.kham.com.tw/application/UTK01/UTK0101_06.aspx?TYPE=1&CATEGORY=80'
+var cors = "https://cors-anywhere.herokuapp.com/";
+var getUrl = url => cors + url;
+var url = 'https://www.kham.com.tw/application/UTK01/UTK0101_06.aspx?TYPE=1&CATEGORY=80';
 $.get(getUrl(url)).done(
   (s) => {
-    var el = document.createElement( 'div' );
-    el.innerHTML = s;
-    console.log($(el).find('title').text());
+
+      var el = document.createElement( 'div' );
+      el.innerHTML = s;
+      console.log($(el).find('div.d_frame').click());
+      // console.log($(el));
+
+
+
+
   }
 ).fail(
   (e) => {
     console.log('e: ', e);
   }
 );
+
