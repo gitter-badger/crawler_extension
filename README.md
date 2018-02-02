@@ -1,6 +1,8 @@
 Ninja Crawler !
 ======
 
+[![Join the chat at https://gitter.im/crawler_extension/Lobby](https://badges.gitter.im/crawler_extension/Lobby.svg)](https://gitter.im/crawler_extension/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 
 ## usage
